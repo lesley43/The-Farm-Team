@@ -13,6 +13,10 @@ To check status of branch:
 	git status
 
 To push branch up to repo:
+	--note: right now it looks like we have to use  
+		git push --set-upstream origin <branch name>
+	--to get it to push. I will try to figure out why that is.
+
 	First:
 		git add .		(to add all changes)
 			OR
