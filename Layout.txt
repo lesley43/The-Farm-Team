@@ -2,3 +2,38 @@ Here is where we can decide what pages we want and what goes where.
 
 This is a test to see if I fixed the upstream issue.
 	P.S. It didn't work
+
+
+Plot design page:
+graph - visualization
+	walkways
+	different colors (picked by user)
+		colors represent crop
+	a key - colors match
+	spacing tool?
+	recommendations?
+	N direction - for sunlight
+
+Calendar page
+When crops were planted
+	when sprouted
+	when to harvest
+
+recommended times of year to plant
+	based on user's zone?
+
+optional alerts?
+
+Info page:
+planting times
+sprout times
+image
+height
+spacing
+how to preserve or cook?
+
+Search page
+find crops
+filter by type, time of year to grow
+scroll through all?
+filter by cuisine?
