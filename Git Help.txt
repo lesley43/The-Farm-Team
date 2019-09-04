@@ -32,3 +32,5 @@ To request a merge of branch into master (to implement changes):
 	On github, create a pull request. The other team member will review changes
 	If everything looks good, they will merge the branch into master.
 
+Exit out of VIM: enter :wq
+	to exit
