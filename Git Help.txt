@@ -1,0 +1,36 @@
+Git help:
+
+To make sure you're working with the most recent version from master:
+	git pull
+
+To checkout a new branch for making changes:
+	git checkout -b <branch name>
+
+To switch branches:
+	git checkout <branch name>
+
+To check status of branch:
+	git status
+
+To push branch up to repo:
+	--note: right now it looks like we have to use  
+		git push --set-upstream origin <branch name>
+	--to get it to push. I will try to figure out why that is.
+
+	First:
+		git add .		(to add all changes)
+			OR
+		git add <filename>	(to add one at a time)
+
+	Second:
+		git commit -m "my comment here"
+
+	Third:
+		git push
+
+To request a merge of branch into master (to implement changes):
+	On github, create a pull request. The other team member will review changes
+	If everything looks good, they will merge the branch into master.
+
+Exit out of VIM: enter :wq
+	to exit
