@@ -1,0 +1,48 @@
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+body {
+  font-family: "Roboto Slab", serif;
+  font-size: 1rem;
+  line-height: 1.25; }
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
+
+.jumbotron {
+  text-align: center;
+  background: none; }
+
+.sectionLight {
+  background-color: #fffcfc;
+  padding: 2rem; }
+
+.sectionDark {
+  background-color: #cccccc;
+  padding: 2rem; }
+
+.buttonWrapper {
+  margin-top: 20px; }
+
+button.coolBtn {
+  background-color: #00b53f;
+  color: #fff;
+  display: block;
+  margin: auto; }
+
+.navbar-nav p {
+  color: #00b53f;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 5px 10px; }
+
+.nav-item.nav-link:hover {
+  color: #00b53f; }
+
+/*# sourceMappingURL=app.css.map */
