@@ -1,0 +1,8 @@
+To get your sass changes to compile, you need to:
+
+1) Make sure you have Ruby
+
+2) Open up cmd at the project base
+
+3) Type in the command:
+  sass --watch sass:css
