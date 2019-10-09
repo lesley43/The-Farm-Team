@@ -1,25 +1,22 @@
 .jumbotron {
   text-align: center;
-  background: none;
-}
+  background: none; }
 
 .sectionLight {
   background-color: #eceeef;
-  padding: 2rem;
-}
+  padding: 2rem; }
 
 .sectionDark {
   background-color: #cccccc;
-  padding: 2rem;
-}
+  padding: 2rem; }
 
 .buttonWrapper {
-  margin-top: 20px;
-}
+  margin-top: 20px; }
 
-button.coolBtn {
+.btn-main {
   background-color: #00b53f;
-  color: white;
+  color: #fff;
   display: block;
-  margin: auto;
-}
+  margin: auto; }
+
+/*# sourceMappingURL=app.css.map */
