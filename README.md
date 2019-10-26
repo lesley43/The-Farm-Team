@@ -1,9 +1,16 @@
 # The-Farm-Team
 Senior Project for UF
 
-Justin was here!
+Install Node and React.
+In the package.json file, install those dependancies: 
+npm i dependancyName@version.
+Example: npm i font-awesome@4.7.0
 
-Lesley was here!
+If older versions contain vulnerabilities,
+fix with npm audit fix or npm audit fix --force
+
+create project on local machine with:
+create-react-app the-farm-team
 
 
 Note: images found on: https://www.pexels.com
