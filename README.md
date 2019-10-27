@@ -1,6 +1,8 @@
 # The-Farm-Team
 Senior Project for UF
 
+Note: need Ruby for the CSS
+
 Install Node and React.
 In the package.json file, install those dependancies: 
 npm i dependancyName@version.
