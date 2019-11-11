@@ -15,7 +15,8 @@ create project on local machine with:
 create-react-app the-farm-team
 
 I am installing Mongoose for the database:
-npm install -g mongoose
+npm install -g mongoose 
+npm init -y 
 npm i --save mongoose
 
 
