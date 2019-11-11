@@ -9,7 +9,6 @@ import Home from './components/home';
 import NavBar from "./components/navBar";
 import "./App.css";
 
-
 class App extends Component {
   render() {
     return (
