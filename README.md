@@ -14,7 +14,9 @@ fix with npm audit fix or npm audit fix --force
 create project on local machine with:
 create-react-app the-farm-team
 
-I am installing Mongoose for the database
+I am installing Mongoose for the database:
+npm install -g mongoose
+npm i --save mongoose
 
 
 Note: images found on: https://www.pexels.com
