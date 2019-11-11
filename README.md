@@ -1,7 +1,7 @@
 # The-Farm-Team
 Senior Project for UF
 
-Note: need Ruby for the CSS
+Note: need Ruby for the CSS <--I don't think were using this anymore
 
 Install Node and React.
 In the package.json file, install those dependancies: 
@@ -13,6 +13,8 @@ fix with npm audit fix or npm audit fix --force
 
 create project on local machine with:
 create-react-app the-farm-team
+
+I am installing Mongoose for the database
 
 
 Note: images found on: https://www.pexels.com
