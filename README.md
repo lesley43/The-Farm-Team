@@ -1,12 +1,17 @@
 # The-Farm-Team
 Senior Project for UF
 
-Note: need Ruby for the CSS <--I don't think were using this anymore
+Note: need Ruby for the CSS <--I don't think were using Ruby anymore
 
 Install Node and React.
 In the package.json file, install those dependancies: 
 npm i dependancyName@version.
 Example: npm i font-awesome@4.7.0
+
+--note: we also need jquery@1.9.1
+  popper.js@1.14.7
+  and 
+  typescript@*
 
 If older versions contain vulnerabilities,
 fix with npm audit fix or npm audit fix --force
