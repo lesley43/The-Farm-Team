@@ -12,6 +12,8 @@ Example: npm i font-awesome@4.7.0
   popper.js@1.14.7
   and 
   typescript@*
+  
+  --another note: I had to run npm install jquery@3.4.1 to fix high vulnerability
 
 If older versions contain vulnerabilities,
 fix with npm audit fix or npm audit fix --force
