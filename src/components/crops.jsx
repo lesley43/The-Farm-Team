@@ -2,6 +2,7 @@ import React, { Component } from "react";
 //import { Link } from "react-router-dom";
 import CropsTable from "./cropsTable";
 import SearchBox from "./searhBox";
+import ViewCrop from "./viewCrop";
 //import ListGroup from "./common/listGroup";
 import Pagination from "./common/pagination";
 import { getCrops, deleteCrop } from "../data/fakeCropData";
@@ -116,6 +117,10 @@ class Crops extends Component {
             onDelete={this.handleDelete}
             onSort={this.handleSort}
           />
+          {/* <ViewCrop
+            selectedCrop={this.state.selectedCrop}
+            data={this.props.data}
+          /> */}
           <Pagination
             itemsCount={totalCount}
             pageSize={pageSize}
