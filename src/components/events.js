@@ -1,23 +1,20 @@
 import React from 'react';
 import Calendar from 'react-calendar';
+import ShowEvent from './showEvents.js'
 
 class Events extends React.Component {
-  state = {
-    date: new Date(),
-  }
 
-  onChange = date => this.setState({ date })
 
   render() {
 
-    console.log("from events: ", this.props.date);
-
-    console.log("from events: ", this.props.newDate);
+    const data = this.props.data;
 
     return (
       <div>
         <h1>{this.props.newDate}</h1>
-
+        < ShowEvent
+          data={this.props.data}
+          newDate={this.props.newDate}/>
       </div>
     );
   }

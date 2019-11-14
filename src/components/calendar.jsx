@@ -1,6 +1,7 @@
 import React from 'react';
 import Calendar from 'react-calendar';
 import Events from './events.js'
+import data from '../data/calEvents.json'
 
 class CalendarPage extends React.Component {
   constructor(props) {
@@ -31,9 +32,6 @@ class CalendarPage extends React.Component {
 
   render() {
 
-    console.log("calendar date: ", this.state.date);
-    console.log("calendar newDate: ", this.state.newDate);
-
     return (
       <div>
         <Calendar
@@ -42,7 +40,8 @@ class CalendarPage extends React.Component {
         />
 
         <Events
-          date={this.state.date}
+          data={data}
+          date={this.props.date}
           newDate={this.state.newDate} />
       </div>
     );
