@@ -1,5 +1,4 @@
 import React from 'react';
-import Calendar from 'react-calendar';
 import ShowEvent from './showEvents.js'
 
 class Events extends React.Component {
