@@ -1,39 +1,74 @@
 import React from 'react';
 
 class PlotArea extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      colorChosen: {
-        r: '0',
-        g: '0',
-        b: '0',
-        a: '0',
-      },
-    };
-    //bind functions here
-  }
 
   render() {
+
+    const plotStyle = {
+      height: "30px",
+      width: "30px",
+      border: "2px solid black"
+    }
+
     return(
       <div>
         <div className='row'>
           <h1>Hi! I am the plot area!</h1>
         </div>
         <div className='row'>
-          <button type="button" class="btn btn-light"></button>
-          <button type="button" class="btn btn-light"></button>
-          <button type="button" class="btn btn-light"></button>
+          <div
+            className="btn btn-warning"
+            style={plotStyle}
+            onClick={this.props.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+            style={plotStyle}
+            onClick={this.props.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+            style={plotStyle}
+            onClick={this.props.colorPlot}>
+          </div>
         </div>
+
+
         <div className='row'>
-          <button type="button" class="btn btn-light"></button>
-          <button type="button" class="btn btn-light"></button>
-          <button type="button" class="btn btn-light"></button>
+          <div
+            className="btn btn-warning"
+            style={plotStyle}
+            onClick={this.props.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+            style={plotStyle}
+            onClick={this.props.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+            style={plotStyle}
+            onClick={this.props.colorPlot}>
+          </div>
         </div>
+
+
         <div className='row'>
-          <button type="button" class="btn btn-light"></button>
-          <button type="button" class="btn btn-light"></button>
-          <button type="button" class="btn btn-light"></button>
+          <div
+            className="btn btn-warning"
+            style={plotStyle}
+            onClick={this.props.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+            style={plotStyle}
+            onClick={this.props.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+            style={plotStyle}
+            onClick={this.props.colorPlot}>
+          </div>
         </div>
       </div>
     )

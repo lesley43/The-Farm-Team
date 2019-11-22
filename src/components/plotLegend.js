@@ -4,15 +4,8 @@ import { SketchPicker } from 'react-color';
 
 class PlotLegend extends React.Component {
 
-  var Button = React.createClass({
-    getInitialState: function() {
-      return {
-        bgColor: 'green'
-      }
-    },
-  })
-
   render() {
+
     const styles = reactCSS({
       'default': {
         color: {
@@ -42,19 +35,54 @@ class PlotLegend extends React.Component {
         },
       },
     });
+
+    const data = this.props.data;
+    const newArray = this.props.data.button;
+
+    const mapButton = newArray.map( item => {
+      return (
+        <button
+          key={item.name}
+          type="button"
+          className="btn btn-light"
+          style={{backgroundColor: `rgba(${ item.color.r }, ${ item.color.g }, ${ item.color.b }, ${ item.color.a })`}}
+          onClick={() => this.props.handleSelection(item.color.r, item.color.g, item.color.b, item.color.a)}
+          >
+          {item.name}
+        </button>
+      )
+    })
+
+    const clearStyle = {
+      backgroundColor: `rgba(${ this.props.clearColor.r }, ${ this.props.clearColor.g }, ${ this.props.clearColor.b }, ${ this.props.clearColor.a })`,
+      color: "black"
+    }
+
     return(
       <div>
-        <h1>Hi! Im the legend!</h1>
         <div className="row">
-          <div style={ styles.swatch } onClick={ this.props.handleClick }>
+
+          <div style={ styles.swatch }
+            onClick={ this.props.handleClick }>
             <div style={ styles.color } />
           </div>
           { this.props.displayColorPicker ? <div style={ styles.popover }>
             <div style={ styles.cover } onClick={ this.props.handleClose }/>
             <SketchPicker color={ this.props.color } onChange={ this.props.handleChange } />
           </div> : null }
-          <button type="button" class="btn btn-primary">Broccoli</button>
+
         </div>
+
+
+          {mapButton}
+
+          <button
+            type="button"
+            className="btn btn-dark"
+            style={clearStyle}
+            onClick={this.props.handleSelection}>
+            Clear selection
+          </button>
 
       </div>
     )
@@ -62,3 +90,6 @@ class PlotLegend extends React.Component {
 }
 
 export default PlotLegend;
+
+
+//onClick={this.handleSelection(${ item.color.r }, ${ item.color.g }, ${ item.color.b }, ${ item.color.a })}
