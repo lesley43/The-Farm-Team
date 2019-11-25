@@ -12,9 +12,7 @@ class PlotArea extends React.Component {
 
     return(
       <div>
-        <div className='row'>
-          <h1>Hi! I am the plot area!</h1>
-        </div>
+
         <div className='row'>
           <div
             className="btn btn-warning"

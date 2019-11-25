@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 import reactCSS from 'reactcss'
-import { SketchPicker } from 'react-color';
+import { SketchPicker } from 'react-color'
 
 class PlotLegend extends React.Component {
 
