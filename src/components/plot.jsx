@@ -135,7 +135,8 @@ class Plot extends React.Component {
 
         </div>
 
-        <PlotArea />
+        <PlotArea
+          colorChosen={this.state.colorChosen} />
 
       </div>
     );

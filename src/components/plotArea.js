@@ -1,33 +1,47 @@
 import React from 'react';
+import PlotDiv from './plotDiv.js'
 
 class PlotArea extends React.Component {
 
   render() {
 
-    const plotStyle = {
-      height: "30px",
-      width: "30px",
-      border: "2px solid black"
-    }
-
     return(
       <div>
 
         <div className='row'>
+
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+
           <div
             className="btn btn-warning"
-            style={plotStyle}
-            onClick={this.props.colorPlot}>
+
+            onClick={this.colorPlot}>
           </div>
           <div
             className="btn btn-warning"
-            style={plotStyle}
-            onClick={this.props.colorPlot}>
+
+            onClick={this.colorPlot}>
           </div>
           <div
             className="btn btn-warning"
-            style={plotStyle}
-            onClick={this.props.colorPlot}>
+
+            onClick={this.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
           </div>
         </div>
 
@@ -35,18 +49,33 @@ class PlotArea extends React.Component {
         <div className='row'>
           <div
             className="btn btn-warning"
-            style={plotStyle}
-            onClick={this.props.colorPlot}>
+
+            onClick={this.colorPlot}>
           </div>
           <div
             className="btn btn-warning"
-            style={plotStyle}
-            onClick={this.props.colorPlot}>
+
+            onClick={this.colorPlot}>
           </div>
           <div
             className="btn btn-warning"
-            style={plotStyle}
-            onClick={this.props.colorPlot}>
+
+            onClick={this.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
           </div>
         </div>
 
@@ -54,20 +83,136 @@ class PlotArea extends React.Component {
         <div className='row'>
           <div
             className="btn btn-warning"
-            style={plotStyle}
-            onClick={this.props.colorPlot}>
+
+            onClick={this.colorPlot}>
           </div>
           <div
             className="btn btn-warning"
-            style={plotStyle}
-            onClick={this.props.colorPlot}>
+
+            onClick={this.colorPlot}>
           </div>
           <div
             className="btn btn-warning"
-            style={plotStyle}
-            onClick={this.props.colorPlot}>
+
+            onClick={this.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
           </div>
         </div>
+
+        <div className='row'>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
+          </div>
+        </div>
+
+        <div className='row'>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
+          </div>
+        </div>
+
+        <div className='row'>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
+          </div>
+          <div
+            className="btn btn-warning"
+
+            onClick={this.colorPlot}>
+          </div>
+        </div>
+
+
       </div>
     )
   }
