@@ -1,32 +1,7 @@
 import React from 'react';
+import CropButton from "./cropButton.js"
 
 class CropButtonController extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      r: '175',
-      g: '175',
-      b: '175',
-      a: '100',
-    };
-    this.cropButtonClicked = this.cropButtonClicked.bind(this);
-  }
-
-  cropButtonClicked = () => {
-    const chosen = this.state.colorChosen;
-    if (this.props.readyToSet === true) {
-      let colorR = this.props.color.r;
-      let colorG = this.props.color.g;
-      let colorB = this.props.color.b;
-      let colorA = this.props.color.a;
-      this.setState({
-        r: colorR,
-        g: colorG,
-        b: colorB,
-        a: colorA,
-      })
-    }
-  }
 
   render() {
 
@@ -35,19 +10,13 @@ class CropButtonController extends React.Component {
 
     const mapButton = newArray.map( item => {
       return (
-        <div>
-          <button
-            key={item.name}
-            type="button"
-            className="btn btn-light"
-            style={{backgroundColor: `rgba(${ item.color.r }, ${ item.color.g }, ${ item.color.b }, ${ item.color.a })`}}
-            onClick={() => {
-              this.cropButtonClicked();
-              this.props.cropButtonClick();
-            }}
-            >
-            {item.name}
-          </button>
+        <div key={item.name}>
+          <CropButton
+            item={item}
+            data={data}
+            readyToSet={this.props.readyToSet}
+            colorChosen={this.props.colorChosen}
+            cropButtonClick={this.props.cropButtonClick} />
         </div>
       )
     })
@@ -61,9 +30,3 @@ class CropButtonController extends React.Component {
 }
 
 export default CropButtonController;
-
-/*
-
-onClick={() => this.props.handleSelection(item.color.r, item.color.g, item.color.b, item.color.a)}
-
-*/

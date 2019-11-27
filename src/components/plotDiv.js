@@ -1,5 +1,4 @@
 import React from 'react'
-import PlotArea from './plotArea.js'
 
 class PlotDiv extends React.Component {
   constructor(props) {
@@ -14,22 +13,17 @@ class PlotDiv extends React.Component {
   };
 
   colorPlot = () => {
-    console.log("props r: ");
-    console.log(this.props.r);
-    let colorR = this.props.r;
-    let colorG = this.props.g;
-    let colorB = this.props.b;
-    let colorA = this.props.a;
-    console.log(colorR);
-    console.log("im running");
-    console.log(this.state);
+    let colorChose = this.props.colorChosen;
+    let colorR = colorChose.r;
+    let colorG = colorChose.g;
+    let colorB = colorChose.b;
+    let colorA = colorChose.a;
     this.setState({
       r: colorR,
       g: colorG,
       b: colorB,
       a: colorA,
     })
-    console.log(this.state);
   }
 
   render() {

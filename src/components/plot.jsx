@@ -2,8 +2,7 @@ import React from 'react'
 import reactCSS from 'reactcss'
 import { SketchPicker } from 'react-color'
 import PlotArea from './plotArea.js'
-import CropButtonController from './cropButtonController.js'
-import PlotLegend2 from './plotLegend2.js'
+import PlotLegend from './plotLegend.js'
 import data from '../data/buttonColor.json'
 
 class Plot extends React.Component {
@@ -16,12 +15,6 @@ class Plot extends React.Component {
         r: '175',
         g: '175',
         b: '175',
-        a: '100',
-      },
-      clearColor: {
-        r: '235',
-        g: '235',
-        b: '235',
         a: '100',
       },
       colorChosen: {
@@ -42,8 +35,6 @@ class Plot extends React.Component {
 
   setReady = () => {
     this.setState({ readyToSet: true});
-    console.log("from setReady function: ");
-    console.log(this.state.readyToSet);
   }
 
   handleClick = () => {
@@ -55,30 +46,33 @@ class Plot extends React.Component {
   };
 
   handleChange = (color) => {
-    this.setState({ color: color.rgb })
-    console.log("from handlechange: ");
-    console.log(this.state.color);
+    this.setState({
+      color: color.rgb,
+      colorChosen: color.rgb,
+    })
   };
 
-  cropButtonClick = () => {
-    this.setState({ readyToSet: false});
+  cropButtonClick = (red, gre, blu, tr) => {
+    this.setState({
+      readyToSet: false,
+      colorChosen: {
+        r: red,
+        g: gre,
+        b: blu,
+        a: tr,
+      }
+    });
   }
 
   handleClear = () => {
-    let chosenR = this.state.clearColor.r;
-    let chosenG = this.state.clearColor.g;
-    let chosenB = this.state.clearColor.b;
-    let chosenA = this.state.clearColor.a;
     this.setState({
       colorChosen: {
-        r: chosenR,
-        g: chosenG,
-        b: chosenB,
-        a: chosenA,
+        r: "235",
+        g: "235",
+        b: "235",
+        a: "100",
       }
     });
-    console.log("colorChosen: is");
-    console.log(this.state.colorChosen);
   };
 
   render() {
@@ -96,7 +90,7 @@ class Plot extends React.Component {
     }
 
     const clearStyle = {
-      backgroundColor: `rgba(${ this.state.clearColor.r }, ${ this.state.clearColor.g }, ${ this.state.clearColor.b }, ${ this.state.clearColor.a })`,
+      backgroundColor: `rgba(235, 235, 235, 100)`,
       color: "black"
     }
 
@@ -114,11 +108,9 @@ class Plot extends React.Component {
           </div>
 
           <div className="col-md-8">
-            <PlotLegend2
+            <PlotLegend
             data={data}
             readyToSet={this.state.readyToSet}
-            color={this.state.color}
-            clearColor={this.state.clearColor}
             colorChosen={this.state.colorChosen}
             cropButtonClick={this.cropButtonClick} />
           </div>
@@ -144,25 +136,3 @@ class Plot extends React.Component {
 }
 
 export default Plot;
-
-
-/*
-this.colorPlot = this.colorPlot.bind(this);
-
-<PlotArea
-  colorPlot={this.colorPlot} />
-
-  import PlotLegend from './plotLegend.js'
-
-
-  <PlotLegend
-    displayColorPicker={this.state.displayColorPicker}
-    color={this.state.color}
-    clearColor={this.state.clearColor}
-    handleClick={this.handleClick}
-    handleClose={this.handleClose}
-    handleChange={this.handleChange}
-    handleClear={this.handleClear}
-    data={data} />
-
-*/

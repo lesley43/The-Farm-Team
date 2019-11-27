@@ -12,206 +12,241 @@ class PlotArea extends React.Component {
 
           <PlotDiv
             colorChosen={this.props.colorChosen} />
-
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-        </div>
-
-
-        <div className='row'>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-        </div>
-
-
-        <div className='row'>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
         </div>
 
         <div className='row'>
-          <div
-            className="btn btn-warning"
 
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
         </div>
 
         <div className='row'>
-          <div
-            className="btn btn-warning"
 
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
         </div>
 
         <div className='row'>
-          <div
-            className="btn btn-warning"
 
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
-          <div
-            className="btn btn-warning"
-
-            onClick={this.colorPlot}>
-          </div>
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
         </div>
 
+        <div className='row'>
+
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+        </div>
+
+        <div className='row'>
+
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+        </div>
+
+        <div className='row'>
+
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+        </div>
+
+        <div className='row'>
+
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+        </div>
+
+        <div className='row'>
+
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+        </div>
+
+        <div className='row'>
+
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+          <PlotDiv
+            colorChosen={this.props.colorChosen} />
+        </div>
 
       </div>
     )
