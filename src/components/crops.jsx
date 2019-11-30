@@ -2,7 +2,7 @@ import React, { Component } from "react";
 //import { Link } from "react-router-dom";
 import CropsTable from "./cropsTable";
 import SearchBox from "./searhBox";
-//import ListGroup from "./common/listGroup";
+import ListGroup from "./common/listGroup";
 import Pagination from "./common/pagination";
 import { getCrops, deleteCrop } from "../data/fakeCropData";
 import { getTypes } from "../data/fakeTypeData";
@@ -91,39 +91,46 @@ class Crops extends Component {
     const { totalCount, data: crops } = this.getPagedData();
 
     return (
-      <div className="row">
+      <div className="row sectionDark">
+
         <div className="col-3">
-          {/* <ListGroup
+          { <ListGroup
             items={this.state.types}
             selectedItem={this.state.selectedType}
             onItemSelect={this.handleTypeSelect}
-          /> */}
+          /> }
         </div>
+
         <div className="col">
-          {/* <Link
-            to="/crops/new"
-            className="btn btn-primary"
-            style={{ marginBottom: 20 }}
-          >
-            New Crop
-          </Link> */}
-          <p>Showing {totalCount} crops in the database.</p>
-          <SearchBox value={searchQuery} onChange={this.handleSearch} />
-          <CropsTable
-            crops={crops}
-            sortColumn={sortColumn}
-            onLike={this.handleLike}
-            onDelete={this.handleDelete}
-            onSort={this.handleSort}
-          />
-          <Pagination
-            itemsCount={totalCount}
-            pageSize={pageSize}
-            currentPage={currentPage}
-            onPageChange={this.handlePageChange}
-          />
+          <div className="row cards addSpaceBelow">
+            {/* <Link
+              to="/crops/new"
+              className="btn btn-primary"
+              style={{ marginBottom: 20 }}
+            >
+              New Crop
+            </Link> */}
+            <SearchBox value={searchQuery} onChange={this.handleSearch} />
+            <CropsTable
+              crops={crops}
+              sortColumn={sortColumn}
+              onLike={this.handleLike}
+              onDelete={this.handleDelete}
+              onSort={this.handleSort}
+            />
+          </div>
+          <div className="row">
+            <Pagination
+              itemsCount={totalCount}
+              pageSize={pageSize}
+              currentPage={currentPage}
+              onPageChange={this.handlePageChange}
+            />
+          </div>
         </div>
+
       </div>
+
     );
   }
 }
