@@ -54,7 +54,9 @@ class CalendarPage extends React.Component {
   render() {
 
     return (
-      <div>
+      <div className="sectionDark cards">
+        <div className="row addSpace">
+
         <Calendar
           onChange={this.onChange}
           value={this.state.date}
@@ -64,6 +66,8 @@ class CalendarPage extends React.Component {
           data={data}
           date={this.props.date}
           newDate={this.state.newDate} />
+
+        </div>
 
         <ManageEventsButton
           data={data}

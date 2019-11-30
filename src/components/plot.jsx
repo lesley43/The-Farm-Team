@@ -97,17 +97,25 @@ class Plot extends React.Component {
 
     return (
       <div>
-        <div className="row">
+        <div className="row sectionDark cards">
 
-          <div className="col-md-3">
-            <button onClick={ this.handleClick }>Pick Color</button>
+          <div className="col-sm-3">
+            <button
+              type="button"
+              className="btn btn-info"
+              onClick={ this.handleClick }>Pick Color</button>
             { this.state.displayColorPicker ? <div style={ popover }>
               <div style={ cover } onClick={ this.handleClose }/>
               <SketchPicker color={ this.state.color } onChange={ this.handleChange }/>
               </div> : null }
+            <button
+              type="button"
+              className="btn btn-secondary">
+              Add Crop
+            </button>
           </div>
 
-          <div className="col-md-8">
+          <div className="col-sm-7">
             <PlotLegend
             data={data}
             readyToSet={this.state.readyToSet}
@@ -115,18 +123,18 @@ class Plot extends React.Component {
             cropButtonClick={this.cropButtonClick} />
           </div>
 
-          <div className="col-md-1">
+          <div className="col-sm-2">
           <button
             type="button"
             className="btn btn-dark"
             style={clearStyle}
             onClick={this.handleClear}>
-            Clear selection
+            Clear
           </button>
           </div>
 
         </div>
-
+        
         <PlotArea
           colorChosen={this.state.colorChosen} />
 

@@ -14,13 +14,25 @@ class ShowEvent extends React.Component {
       if (itemDate === newDate) {
         const result = item.details;
         return (
-          <div key={newDate}>{result}</div>
+          <div className="row">
+            <div
+              className="col-sm-10"
+              key={newDate}>
+              {result}
+              </div>
+            <div className="col-sm-2">
+            <button type="button"
+              class="btn btn-danger"
+              id="calendarDeleteEventBtn"
+              >Delete</button>
+            </div>
+          </div>
         )
       }
     })
 
     return(
-      <div>
+      <div className="row">
         <h3>{mapping}</h3>
       </div>
 

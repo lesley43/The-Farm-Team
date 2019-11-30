@@ -9,7 +9,7 @@ class Events extends React.Component {
     const data = this.props.data;
 
     return (
-      <div>
+      <div className="addSpace">
         <h1>{this.props.newDate}</h1>
         < ShowEvent
           data={this.props.data}

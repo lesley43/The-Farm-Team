@@ -1,7 +1,7 @@
 import React from 'react'
 import CropButtonController from './cropButtonController.js'
 
-class PlotLegend2 extends React.Component {
+class PlotLegend extends React.Component {
 
   render() {
 
@@ -19,4 +19,4 @@ class PlotLegend2 extends React.Component {
   }
 }
 
-export default PlotLegend2;
+export default PlotLegend;

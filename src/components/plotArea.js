@@ -8,7 +8,7 @@ class PlotArea extends React.Component {
     return(
       <div>
 
-        <div className='row'>
+        <div className='row justify-content-center'>
 
           <PlotDiv
             colorChosen={this.props.colorChosen} />
@@ -30,9 +30,18 @@ class PlotArea extends React.Component {
             colorChosen={this.props.colorChosen} />
           <PlotDiv
             colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+
         </div>
 
-        <div className='row'>
+        <div className='row justify-content-center'>
 
           <PlotDiv
             colorChosen={this.props.colorChosen} />
@@ -54,9 +63,18 @@ class PlotArea extends React.Component {
             colorChosen={this.props.colorChosen} />
           <PlotDiv
             colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+
         </div>
 
-        <div className='row'>
+        <div className='row justify-content-center'>
 
           <PlotDiv
             colorChosen={this.props.colorChosen} />
@@ -78,9 +96,17 @@ class PlotArea extends React.Component {
             colorChosen={this.props.colorChosen} />
           <PlotDiv
             colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
         </div>
 
-        <div className='row'>
+        <div className='row justify-content-center'>
 
           <PlotDiv
             colorChosen={this.props.colorChosen} />
@@ -102,9 +128,17 @@ class PlotArea extends React.Component {
             colorChosen={this.props.colorChosen} />
           <PlotDiv
             colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
         </div>
 
-        <div className='row'>
+        <div className='row justify-content-center'>
 
           <PlotDiv
             colorChosen={this.props.colorChosen} />
@@ -126,9 +160,17 @@ class PlotArea extends React.Component {
             colorChosen={this.props.colorChosen} />
           <PlotDiv
             colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
         </div>
 
-        <div className='row'>
+        <div className='row justify-content-center'>
 
           <PlotDiv
             colorChosen={this.props.colorChosen} />
@@ -150,9 +192,17 @@ class PlotArea extends React.Component {
             colorChosen={this.props.colorChosen} />
           <PlotDiv
             colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
         </div>
 
-        <div className='row'>
+        <div className='row justify-content-center'>
 
           <PlotDiv
             colorChosen={this.props.colorChosen} />
@@ -174,9 +224,18 @@ class PlotArea extends React.Component {
             colorChosen={this.props.colorChosen} />
           <PlotDiv
             colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+
         </div>
 
-        <div className='row'>
+        <div className='row justify-content-center'>
 
           <PlotDiv
             colorChosen={this.props.colorChosen} />
@@ -198,9 +257,18 @@ class PlotArea extends React.Component {
             colorChosen={this.props.colorChosen} />
           <PlotDiv
             colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+
         </div>
 
-        <div className='row'>
+        <div className='row justify-content-center'>
 
           <PlotDiv
             colorChosen={this.props.colorChosen} />
@@ -222,9 +290,18 @@ class PlotArea extends React.Component {
             colorChosen={this.props.colorChosen} />
           <PlotDiv
             colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+
         </div>
 
-        <div className='row'>
+        <div className='row justify-content-center'>
 
           <PlotDiv
             colorChosen={this.props.colorChosen} />
@@ -246,6 +323,15 @@ class PlotArea extends React.Component {
             colorChosen={this.props.colorChosen} />
           <PlotDiv
             colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+            <PlotDiv
+              colorChosen={this.props.colorChosen} />
+
         </div>
 
       </div>

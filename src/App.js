@@ -7,14 +7,13 @@ import Plot from "./components/plot";
 import NotFound from "./components/notFound";
 import Home from './components/home';
 import NavBar from "./components/navBar";
-import "./App.css";
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
         <NavBar />
-        <main className="container">
+        <main className="container sectionLight">
           <Switch>
             <Route path="/crops/:name" component={CropForm} />
             <Route path="/crops" component={Crops} />

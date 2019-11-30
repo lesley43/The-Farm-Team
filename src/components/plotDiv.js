@@ -31,13 +31,14 @@ class PlotDiv extends React.Component {
         const plotStyle = {
           height: "50px",
           width: "50px",
-          border: "2px solid black",
+          border: "1px ridge gray",
           backgroundColor: `rgba(${ this.state.r }, ${ this.state.g }, ${ this.state.b }, ${ this.state.a })`
         }
 
     return (
       <div>
         <div
+          className="cards"
           style={plotStyle}
           onClick={this.colorPlot}>
         </div>

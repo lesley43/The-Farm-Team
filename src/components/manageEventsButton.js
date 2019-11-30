@@ -28,7 +28,7 @@ class ManageEvents extends React.Component {
 
 
     return (
-      <div>
+      <div className="addSpace">
 
         <form>
 
@@ -45,8 +45,6 @@ class ManageEvents extends React.Component {
             onClick={this.addEvent}
             >Add my event</button>
         </form>
-
-        <h3>{this.props.newEvent}</h3>
 
       </div>
     );
