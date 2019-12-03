@@ -1,14 +1,15 @@
 import React, { Component } from "react";
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 import CropsTable from "./cropsTable";
-import SearchBox from "./searhBox";
-import ViewCrop from "./viewCrop";
-//import ListGroup from "./common/listGroup";
+import ListGroup from "./common/listGroup";
 import Pagination from "./common/pagination";
-import { getCrops, deleteCrop } from "../data/fakeCropData";
-import { getTypes } from "../data/fakeTypeData";
+import { getCrops, deleteCrop } from "../services/cropService";
+import { getTypes } from "../services/typeService";
 import { paginate } from "../utils/paginate";
 import _ from "lodash";
+import SearchBox from "./searchBox";
+import axios from "axios";
 
 class Crops extends Component {
   state = {
@@ -21,17 +22,27 @@ class Crops extends Component {
     sortColumn: { path: "name", order: "asc" }
   };
 
-  componentDidMount() {
-    const types = [{ _id: "", name: "All Crop Types" }, ...getTypes()];
+  async componentDidMount() {
+    const { data } = await axios.get("http://localhost:8080/api/types");
+    const types = [{ _id: "", name: "All Crop Types" }, ...data];
 
-    this.setState({ crops: getCrops(), types });
+    const { data: crops } = await axios.get("http://localhost:8080/api/crops");
+    this.setState({ crops, types });
   }
 
-  handleDelete = crop => {
-    const crops = this.state.crops.filter(c => c._id !== crop._id);
+  handleDelete = async crop => {
+    const originalCrops = this.state.crops;
+    const crops = originalCrops.filter(c => c._id !== crop._id);
     this.setState({ crops });
 
-    deleteCrop(crop._id);
+    try {
+      await deleteCrop(crop._id);
+    } catch (ex) {
+      if (ex.response && ex.response.status === 404)
+        toast.error("This crop has already been deleted.");
+
+      this.setState({ crops: originalCrops });
+    }
   };
 
   handleLike = crop => {
@@ -86,6 +97,7 @@ class Crops extends Component {
   render() {
     const { length: count } = this.state.crops;
     const { pageSize, currentPage, sortColumn, searchQuery } = this.state;
+    const { user } = this.props;
 
     if (count === 0) return <p>There are no crops in the database.</p>;
 
@@ -94,20 +106,22 @@ class Crops extends Component {
     return (
       <div className="row">
         <div className="col-3">
-          {/* <ListGroup
+          <ListGroup
             items={this.state.types}
             selectedItem={this.state.selectedType}
             onItemSelect={this.handleTypeSelect}
-          /> */}
+          />
         </div>
         <div className="col">
-          {/* <Link
-            to="/crops/new"
-            className="btn btn-primary"
-            style={{ marginBottom: 20 }}
-          >
-            New Crop
-          </Link> */}
+          {user && (
+            <Link
+              to="/crops/new"
+              className="btn btn-primary"
+              style={{ marginBottom: 20 }}
+            >
+              New Crop
+            </Link>
+          )}
           <p>Showing {totalCount} crops in the database.</p>
           <SearchBox value={searchQuery} onChange={this.handleSearch} />
           <CropsTable
@@ -117,10 +131,6 @@ class Crops extends Component {
             onDelete={this.handleDelete}
             onSort={this.handleSort}
           />
-          {/* <ViewCrop
-            selectedCrop={this.state.selectedCrop}
-            data={this.props.data}
-          /> */}
           <Pagination
             itemsCount={totalCount}
             pageSize={pageSize}

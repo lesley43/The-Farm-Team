@@ -3,18 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.1",
     "bootstrap": "^4.3.1",
     "font-awesome": "^4.7.0",
     "joi-browser": "^13.4.0",
     "jquery": "^3.4.1",
+    "jwt-decode": "^2.2.0",
     "lodash": "^4.17.15",
     "mongoose": "^5.7.9",
     "popper.js": "^1.14.7",
     "prop-types": "^15.6.2",
     "react": "^16.11.0",
+    "react-calendar": "^2.19.2",
     "react-dom": "^16.11.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^3.2.0",
+    "react-toastify": "^4.1.0",
     "typescript": "^3.7.2"
   },
   "scripts": {
@@ -40,7 +44,10 @@
   },
   "description": "Senior Project for UF",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^22.2.2",
+    "supertest": "^3.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lesley43/the-farm-team.git"

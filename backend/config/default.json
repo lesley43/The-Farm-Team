@@ -1,0 +1,5 @@
+{
+  "jwtPrivateKey": "",
+  "db": "mongodb://localhost/thePocketPlot",
+  "port": "8080"
+}
